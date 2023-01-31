@@ -1,7 +1,7 @@
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
-  --basic-gray: #c1c1c1;
+  --basic-gray: #EEEEEE;
   --basic-red: #fb565a;
   --basic-red-hover: #e74246;
   --basic-red-active: #d7373b;
@@ -54,7 +54,7 @@ body {
   display: none;
 }
 
-.navigation-menu-item-link,
+.navigation-link,
 .header-cart {
   line-height: 30px;
   font-weight: 500;
@@ -132,14 +132,14 @@ body {
   background-color: var(--basic-gray);
 }
 
-.red {
+.btn-red {
   background-color: var(--basic-red);
 }
 
-.yellow {
+.btn-yellow {
   background-color: var(--basic-yellow);
 }
 
-.green {
+.btn-green {
   background-color: var(--basic-green);
 }
