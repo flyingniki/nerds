@@ -1,206 +1,145 @@
-font-face {
-  font-weight: 400;
-  font-family: "Roboto";
-  font-style: normal;
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-gray: #c1c1c1;
+  --basic-red: #fb565a;
+  --basic-red-hover: #e74246;
+  --basic-red-active: #d7373b;
+  --basic-green: #00ca74;
+  --basic-green-hover: #00bc6c;
+  --basic-green-active: #00aa62;
+  --basic-yellow: #efc849;
+  --basic-yellow-hover: #eab534;
+  --basic-yellow-active: #e5a722;
+}
 
-  font-display: swap;
+@font-face {
+  font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"),
     url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-weight: 500;
   font-family: "Roboto";
-  font-style: normal;
-
-  font-display: swap;
   src: local("Roboto Medium"), local("Roboto-Medium"),
     url("../fonts/robotomedium.woff2") format("woff2"),
     url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-  font-weight: 700;
   font-family: "Roboto";
-  font-style: normal;
-
-  font-display: swap;
   src: local("Roboto Bold"), local("Roboto-Bold"),
     url("../fonts/robotobold.woff2") format("woff2"),
     url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.visually-hidden {
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.hidden {
   display: none;
 }
-/*Текстовые параметры*/
-.page-navigation-item a,
-.page-navigation-cart {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+
+.navigation-menu-item-link,
+.header-cart {
   line-height: 30px;
-  text-transform: uppercase;
-  color: #000000;
+  font-weight: 500;
 }
 
-.info-slider-item-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 55px;
+.slider-item-header {
   line-height: 55px;
-  color: #000000;
+  font-size: 55px;
 }
 
-.info-slider-item-description {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-
-.info-slider-item-link,
-.services-item-link,
-.contacts-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+.btn {
   line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
-.services-item-subject {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+.directions-item-header {
+  line-height: 30px;
   font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #000000;
+  font-weight: 700;
 }
 
-.about-description-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
+.services-slogan {
   line-height: 45px;
-  color: #000000;
-}
-
-.about-description-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-
-.about-description-subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #283136;
-}
-
-.about-description-list-item {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-
-.about-statistics-table-caption {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.about-statistics-table-percentage {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 45px;
-  line-height: 64px;
-  color: #000000;
+  font-weight: 500;
 }
 
-.about-statistics-table-legend {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.services-text-upper {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.statistics-header {
+  line-height: 24px;
+  font-weight: 700;
+}
+.statistics-term {
   line-height: 18px;
-  color: #283136;
 }
 
-.about-statistics-table-percentage sup {
-  font-family: "Roboto";
-  font-style: normal;
+.statistics-desc {
+  line-height: 45px;
+  font-size: 45px;
   font-weight: 700;
-  font-size: 26px;
+}
+
+.statistics-percent {
   line-height: 40px;
-  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
 }
 
-.contacts-caption {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
+.contacts-header {
   line-height: 30px;
-  text-transform: uppercase;
-  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .contacts-address,
-.contacts-telephone,
-.contacts-telephone a {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.contacts-tel {
   line-height: 18px;
-  color: #666666;
 }
 
-.suggestions-slogan {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
+.promo-slogan {
   line-height: 36px;
-  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
 }
 
-.suggestions-promo {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.promo-text {
   line-height: 22px;
-  color: #444444;
 }
 
-/*Фон*/
-.page-header,
-.info-slider {
-  background: #eeeeee;
+.header,
+.slider {
+  background-color: var(--basic-gray);
+}
+
+.red {
+  background-color: var(--basic-red);
+}
+
+.yellow {
+  background-color: var(--basic-yellow);
+}
+
+.green {
+  background-color: var(--basic-green);
 }
