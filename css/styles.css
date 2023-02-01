@@ -1,7 +1,7 @@
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
-  --basic-gray: #EEEEEE;
+  --basic-gray: #eeeeee;
   --basic-red: #fb565a;
   --basic-red-hover: #e74246;
   --basic-red-active: #d7373b;
@@ -60,7 +60,8 @@ body {
   font-weight: 500;
 }
 
-.slider-item-header {
+.slider-item-header,
+.content-header {
   line-height: 55px;
   font-size: 55px;
 }
@@ -90,7 +91,8 @@ body {
   line-height: 24px;
   font-weight: 700;
 }
-.statistics-term {
+.statistics-term,
+.product-description {
   line-height: 18px;
 }
 
@@ -106,7 +108,10 @@ body {
   font-weight: 700;
 }
 
-.contacts-header {
+.contacts-header,
+.legend-name,
+.sort-text,
+.product-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -123,12 +128,31 @@ body {
   font-weight: 700;
 }
 
-.promo-text {
+.promo-text,
+.price-label,
+.price-input {
   line-height: 22px;
 }
 
+.grid-label {
+  line-height: 20px;
+}
+
+.sort-link {
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.btn-filter,
+.btn-product,
+.pagination-link,
+.btn-contacts {
+  font-weight: 500;
+}
+
 .header,
-.slider {
+.slider,
+.content-section {
   background-color: var(--basic-gray);
 }
 
