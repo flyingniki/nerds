@@ -1,18 +1,3 @@
-:root {
-  --basic-white: #ffffff;
-  --basic-black: #000000;
-  --basic-gray: #eeeeee;
-  --basic-red: #fb565a;
-  --basic-red-hover: #e74246;
-  --basic-red-active: #d7373b;
-  --basic-green: #00ca74;
-  --basic-green-hover: #00bc6c;
-  --basic-green-active: #00aa62;
-  --basic-yellow: #efc849;
-  --basic-yellow-hover: #eab534;
-  --basic-yellow-active: #e5a722;
-}
-
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"),
@@ -38,6 +23,24 @@
     url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+}
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-gray: #eeeeee;
+  --basic-gray-hover: #dfdfdf;
+  --basic-gray-active: #d5d5d5;
+  --basic-red: #fb565a;
+  --basic-red-hover: #e74246;
+  --basic-red-active: #d7373b;
+  --basic-green: #00ca74;
+  --basic-green-hover: #00bc6c;
+  --basic-green-active: #00aa62;
+  --basic-yellow: #efc849;
+  --basic-yellow-hover: #eab534;
+  --basic-yellow-active: #e5a722;
+  --basic-graphite: #4d4d4d;
 }
 
 body {
@@ -152,7 +155,9 @@ body {
 
 .header,
 .slider,
-.content-section {
+.content-section,
+.price-slider-input,
+.price-input {
   background-color: var(--basic-gray);
 }
 
@@ -166,4 +171,22 @@ body {
 
 .btn-green {
   background-color: var(--basic-green);
+}
+
+.btn-gray,
+.product-info {
+  background-color: var(--basic-gray);
+}
+
+.grid-input,
+.features-input {
+  background-color: var(--basic-graphite);
+}
+
+.product-panel {
+  background-color: var(--basic-graphite);
+}
+
+.pagination-link {
+  background-color: var(--basic-gray);
 }
