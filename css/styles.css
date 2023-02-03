@@ -67,6 +67,7 @@ body {
 .content-header {
   line-height: 55px;
   font-size: 55px;
+  font-weight: 500;
 }
 
 .btn {
