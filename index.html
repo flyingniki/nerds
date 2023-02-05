@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
+      <nav class="header-navigation container">
         <a class="header-logo">
           <img
             src="img/nerds-logo.svg"
@@ -49,126 +49,138 @@
       <h1 class="hidden">Интернет-магазин Nёrd's</h1>
 
       <section class="slider">
-        <div class="slider-item">
-          <h2 class="slider-item-header">Долго, дорого, скрупулезно</h2>
-          <p class="slider-item-text">
-            Математически выверенный дизайн для вашего сайта или мобильного
-            приложения
-          </p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
-          <!-- <img src="https://via.placeholder.com/760x431" alt="Телефоны" /> -->
-        </div>
+        <div class="container">
+          <div class="slider-item">
+            <h2 class="slider-item-header">Долго, дорого, скрупулезно</h2>
+            <p class="slider-item-text">
+              Математически выверенный дизайн для вашего сайта или мобильного
+              приложения
+            </p>
+            <a href="#" class="btn btn-red">Узнать больше</a>
+            <!-- <img src="https://via.placeholder.com/760x431" alt="Телефоны" /> -->
+          </div>
 
-        <div class="slider-item hidden">
-          <h2 class="slider-item-header">Любим математику как никто другой</h2>
-          <p class="slider-item-text">
-            Никакого креатива, только математические формулы для расчета
-            идеальных пропорций
-          </p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
-          <!-- <img src="https://via.placeholder.com/760x431" alt="Планшеты" /> -->
-        </div>
+          <div class="slider-item hidden">
+            <h2 class="slider-item-header">
+              Любим математику как никто другой
+            </h2>
+            <p class="slider-item-text">
+              Никакого креатива, только математические формулы для расчета
+              идеальных пропорций
+            </p>
+            <a href="#" class="btn btn-red">Узнать больше</a>
+            <!-- <img src="https://via.placeholder.com/760x431" alt="Планшеты" /> -->
+          </div>
 
-        <div class="slider-item hidden">
-          <h2 class="slider-item-header">Только ночь, только хардкор</h2>
-          <p class="slider-item-text">
-            Работать днем, как все? Мы против этого. Ближе к полуночи работа
-            только начинается.
-          </p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
-          <!-- <img src="https://via.placeholder.com/760x431" alt="Гаджеты" /> -->
+          <div class="slider-item hidden">
+            <h2 class="slider-item-header">Только ночь, только хардкор</h2>
+            <p class="slider-item-text">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              только начинается.
+            </p>
+            <a href="#" class="btn btn-red">Узнать больше</a>
+            <!-- <img src="https://via.placeholder.com/760x431" alt="Гаджеты" /> -->
+          </div>
+          <div class="slider-control"></div>
         </div>
-        <div class="slider-control"></div>
       </section>
 
       <section class="directions">
-        <h2 class="hidden">Направления разработки</h2>
-        <ul class="directions-list">
-          <li class="directions-item">
-            <img
-              src="/img/directions/notebook.png"
-              width="300"
-              height="146"
-              alt="Ноутбук"
-            />
-            <h3 class="directions-item-header">Веб-сайты</h3>
-            <p class="directions-item-text">
-              Мир никогда не будет прежним после того как увидит ваш сайт!
-            </p>
-            <a href="#" class="btn btn-red">Заказать</a>
-          </li>
-          <li class="directions-item">
-            <img
-              src="/img/directions/smartphone.png"
-              width="300"
-              height="146"
-              alt="Смартфон"
-            />
-            <h3 class="directions-item-header">Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="btn btn-green">Заказать</a>
-          </li>
-          <li class="directions-item">
-            <img
-              src="/img/directions/tv.png"
-              width="300"
-              height="146"
-              alt="Телевизор"
-            />
-            <h3 class="directions-item-header">Презентации</h3>
-            <p class="directions-item-text">
-              Вы даже не подозреваете, насколько вы изумительны!
-            </p>
-            <a href="#" class="btn btn-yellow">Заказать</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="services">
-        <h2 class="hidden">Миссия и услуги компании</h2>
-        <div class="services-info">
-          <p class="services-slogan">
-            Мы — маленькая, но гордая дизайн-студия из Краснодара.
-          </p>
-          <p class="services-text">
-            Исповедуем принципы минимализма и чистоты. Ставим математический
-            расчет превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <p class="services-text-upper">Выполняем заказы на разработку:</p>
-          <ul class="services-list">
-            <li class="services-item">Веб-сайтов любой сложности</li>
-            <li class="services-item">
-              Мобильных приложений для iOS и Android
+        <div class="container">
+          <h2 class="hidden">Направления разработки</h2>
+          <ul class="directions-list">
+            <li class="directions-item">
+              <img
+                src="/img/directions/notebook.png"
+                width="300"
+                height="146"
+                alt="Ноутбук"
+              />
+              <h3 class="directions-item-header">Веб-сайты</h3>
+              <p class="directions-item-text">
+                Мир никогда не будет прежним после того как увидит ваш сайт!
+              </p>
+              <a href="#" class="btn btn-red">Заказать</a>
             </li>
-            <li class="services-item">
-              Слайдшоу и видео для корпоративных презентаций
+            <li class="directions-item">
+              <img
+                src="/img/directions/smartphone.png"
+                width="300"
+                height="146"
+                alt="Смартфон"
+              />
+              <h3 class="directions-item-header">Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="#" class="btn btn-green">Заказать</a>
+            </li>
+            <li class="directions-item">
+              <img
+                src="/img/directions/tv.png"
+                width="300"
+                height="146"
+                alt="Телевизор"
+              />
+              <h3 class="directions-item-header">Презентации</h3>
+              <p class="directions-item-text">
+                Вы даже не подозреваете, насколько вы изумительны!
+              </p>
+              <a href="#" class="btn btn-yellow">Заказать</a>
             </li>
           </ul>
         </div>
+      </section>
 
-        <div class="services-statistics">
-          <img
-            src="/img/nerds-illustration.png"
-            width="360"
-            height="208"
-            alt="Nёrd's"
-          />
+      <section class="services">
+        <div class="container">
+          <h2 class="hidden">Миссия и услуги компании</h2>
+          <div class="services-grid">
+            <div class="services-info">
+              <p class="services-slogan">
+                Мы — маленькая, но гордая дизайн-студия из Краснодара.
+              </p>
+              <p class="services-text">
+                Исповедуем принципы минимализма и чистоты. Ставим математический
+                расчет превыше креатива. Работаем не покладая рук, как роботы.
+              </p>
+              <p class="services-text-upper">Выполняем заказы на разработку:</p>
+              <ul class="services-list">
+                <li class="services-item">Веб-сайтов любой сложности</li>
+                <li class="services-item">
+                  Мобильных приложений для iOS и Android
+                </li>
+                <li class="services-item">
+                  Слайдшоу и видео для корпоративных презентаций
+                </li>
+              </ul>
+            </div>
 
-          <h3 class="statistics-header">С 2004 года Любим точность во всем:</h3>
-          <dl class="statistics-list">
-            <dt class="statistics-term">Уровень самоотдачи</dt>
-            <dd class="statistics-desc">
-              146<sup class="statistics-percent">%</sup>
-            </dd>
-            <dt class="statistics-term">Соблюдение сроков</dt>
-            <dd class="statistics-desc">
-              100<sup class="statistics-percent">%</sup>
-            </dd>
-            <dt class="statistics-term">Минимальная предоплата</dt>
-            <dd class="statistics-desc">
-              50<sup class="statistics-percent">%</sup>
-            </dd>
-          </dl>
+            <div class="services-statistics">
+              <img
+                src="/img/nerds-illustration.png"
+                width="360"
+                height="208"
+                alt="Nёrd's"
+              />
+
+              <h3 class="statistics-header">
+                С 2004 года Любим точность во всем:
+              </h3>
+              <dl class="statistics-list">
+                <dt class="statistics-term">Уровень самоотдачи</dt>
+                <dd class="statistics-desc">
+                  146<sup class="statistics-percent">%</sup>
+                </dd>
+                <dt class="statistics-term">Соблюдение сроков</dt>
+                <dd class="statistics-desc">
+                  100<sup class="statistics-percent">%</sup>
+                </dd>
+                <dt class="statistics-term">Минимальная предоплата</dt>
+                <dd class="statistics-desc">
+                  50<sup class="statistics-percent">%</sup>
+                </dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </section>
 
