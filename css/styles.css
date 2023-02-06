@@ -51,6 +51,7 @@ body {
   letter-spacing: 0;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-width: 1440px;
   min-height: 100vh;
 }
 
@@ -69,8 +70,13 @@ body {
   font-weight: 500;
 }
 
+.slider-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .slider-item-header,
-.content-header {
+.catalog-header {
   line-height: 55px;
   font-size: 55px;
   font-weight: 500;
@@ -123,6 +129,16 @@ body {
   line-height: 24px;
   font-weight: 700;
 }
+.statistics-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.statistics-desc {
+  grid-row: 1/2;
+}
+
 .statistics-term,
 .product-description {
   line-height: 18px;
@@ -140,6 +156,12 @@ body {
   font-weight: 700;
 }
 
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
 .contacts-header,
 .legend-name,
 .sort-text,
@@ -152,6 +174,12 @@ body {
 .contacts-address,
 .contacts-tel {
   line-height: 18px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 140px;
 }
 
 .promo-slogan {
@@ -184,7 +212,7 @@ body {
 
 .header,
 .slider,
-.content-section,
+.catalog-section,
 .price-slider-input,
 .price-input {
   background-color: var(--basic-gray);

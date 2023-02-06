@@ -17,77 +17,81 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation container">
-        <a class="header-logo">
-          <img
-            src="img/nerds-logo.svg"
-            class="logo-img"
-            width="159"
-            height="65"
-            alt="Логотип Nerds"
-          />
-        </a>
-        <ul class="navigation-menu">
-          <li class="navigation-item">
-            <a href="blank.html" class="navigation-link">Студия</a>
-          </li>
-          <li class="navigation-item">
-            <a href="blank.html" class="navigation-link">Клиенты</a>
-          </li>
-          <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Магазин</a>
-          </li>
-          <li class="navigation-item">
-            <a href="blank.html" class="navigation-link">Контакты</a>
-          </li>
-        </ul>
-        <a href="blank.html" class="header-cart">Корзина</a>
-      </nav>
+      <div class="container">
+        <nav class="header-navigation">
+          <a class="header-logo">
+            <img
+              src="img/nerds-logo.svg"
+              class="logo-img"
+              width="159"
+              height="65"
+              alt="Логотип Nerds"
+            />
+          </a>
+          <ul class="navigation-menu">
+            <li class="navigation-item">
+              <a href="blank.html" class="navigation-link">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="blank.html" class="navigation-link">Клиенты</a>
+            </li>
+            <li class="navigation-item">
+              <a href="catalog.html" class="navigation-link">Магазин</a>
+            </li>
+            <li class="navigation-item">
+              <a href="blank.html" class="navigation-link">Контакты</a>
+            </li>
+          </ul>
+          <a href="blank.html" class="header-cart">Корзина</a>
+        </nav>
+      </div>
     </header>
 
     <main class="content">
       <h1 class="hidden">Интернет-магазин Nёrd's</h1>
-
       <section class="slider">
         <div class="container">
-          <div class="slider-item">
-            <h2 class="slider-item-header">Долго, дорого, скрупулезно</h2>
-            <p class="slider-item-text">
-              Математически выверенный дизайн для вашего сайта или мобильного
-              приложения
-            </p>
-            <a href="#" class="btn btn-red">Узнать больше</a>
-            <!-- <img src="https://via.placeholder.com/760x431" alt="Телефоны" /> -->
+          <div class="slider-grid">
+            <div class="slider-item">
+              <h2 class="slider-item-header">Долго, дорого, скрупулезно</h2>
+              <p class="slider-item-text">
+                Математически выверенный дизайн для вашего сайта или мобильного
+                приложения
+              </p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+            </div>
           </div>
 
-          <div class="slider-item hidden">
-            <h2 class="slider-item-header">
-              Любим математику как никто другой
-            </h2>
-            <p class="slider-item-text">
-              Никакого креатива, только математические формулы для расчета
-              идеальных пропорций
-            </p>
-            <a href="#" class="btn btn-red">Узнать больше</a>
-            <!-- <img src="https://via.placeholder.com/760x431" alt="Планшеты" /> -->
+          <div class="slider-grid hidden">
+            <div class="slider-item">
+              <h2 class="slider-item-header">
+                Любим математику как никто другой
+              </h2>
+              <p class="slider-item-text">
+                Никакого креатива, только математические формулы для расчета
+                идеальных пропорций
+              </p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+            </div>
           </div>
 
-          <div class="slider-item hidden">
-            <h2 class="slider-item-header">Только ночь, только хардкор</h2>
-            <p class="slider-item-text">
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа
-              только начинается.
-            </p>
-            <a href="#" class="btn btn-red">Узнать больше</a>
-            <!-- <img src="https://via.placeholder.com/760x431" alt="Гаджеты" /> -->
+          <div class="slider-grid hidden">
+            <div class="slider-item">
+              <h2 class="slider-item-header">Только ночь, только хардкор</h2>
+              <p class="slider-item-text">
+                Работать днем, как все? Мы против этого. Ближе к полуночи работа
+                только начинается.
+              </p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+            </div>
           </div>
           <div class="slider-control"></div>
         </div>
       </section>
 
       <section class="directions">
+        <h2 class="hidden">Направления разработки</h2>
         <div class="container">
-          <h2 class="hidden">Направления разработки</h2>
           <ul class="directions-list">
             <li class="directions-item">
               <img
@@ -131,8 +135,8 @@
       </section>
 
       <section class="services">
+        <h2 class="hidden">Миссия и услуги компании</h2>
         <div class="container">
-          <h2 class="hidden">Миссия и услуги компании</h2>
           <div class="services-grid">
             <div class="services-info">
               <p class="services-slogan">
@@ -186,83 +190,97 @@
 
       <section class="partners">
         <h2 class="hidden">Наши партнеры</h2>
-        <ul class="partners-list">
-          <li class="partners-item">
-            <a
-              href="https://htmlacademy.ru/intensive/htmlcss"
-              class="partners-link"
-            >
-              <img
-                src="img/partners/htmlacademy.svg"
-                class="partners-img"
-                width="199"
-                height="57"
-                alt="Логотип Html Academy"
-              />
-            </a>
-          </li>
-          <li class="partners-item">
-            <a href="#" class="partners-link">
-              <img
-                src="img/partners/borodinski.png"
-                class="partners-img"
-                width="209"
-                height="90"
-                alt="Логотип Borodinski"
-              />
-            </a>
-          </li>
-          <li class="partners-item">
-            <a href="#" class="partners-link">
-              <img
-                src="img/partners/pink.png"
-                class="partners-img"
-                width="185"
-                height="52"
-                alt="Логотип Pink"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="partners-link">
-              <img
-                src="img/partners/mishka.png"
-                class="partners-img"
-                width="173"
-                height="84"
-                alt="Логотип Mishka"
-              />
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="partners-list">
+            <li class="partners-item">
+              <a
+                href="https://htmlacademy.ru/intensive/htmlcss"
+                class="partners-link"
+              >
+                <img
+                  src="img/partners/htmlacademy.svg"
+                  class="partners-img"
+                  width="199"
+                  height="57"
+                  alt="Логотип Html Academy"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="#" class="partners-link">
+                <img
+                  src="img/partners/borodinski.png"
+                  class="partners-img"
+                  width="209"
+                  height="90"
+                  alt="Логотип Borodinski"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="#" class="partners-link">
+                <img
+                  src="img/partners/pink.png"
+                  class="partners-img"
+                  width="185"
+                  height="52"
+                  alt="Логотип Pink"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="partners-link">
+                <img
+                  src="img/partners/mishka.png"
+                  class="partners-img"
+                  width="173"
+                  height="84"
+                  alt="Логотип Mishka"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contacts">
         <h2 class="hidden">Контакты</h2>
-        <p class="contacts-header">nёrd's design studio</p>
-        <p class="contacts-address">
-          наб. Реки Карповки,<br />5 лит П, Санкт-Петербург
-        </p>
-        <p class="contacts-tel">
-          <a href="tel:+78005558628" class="contacts-link">+7 800 555-86-28</a>
-        </p>
-        <a href="#" class="btn btn-red">Напишите нам</a>
+        <div class="container">
+          <p class="contacts-header">nёrd's design studio</p>
+          <p class="contacts-address">
+            наб. Реки Карповки,<br />5 лит П, Санкт-Петербург
+          </p>
+          <p class="contacts-tel">
+            <a href="tel:+78005558628" class="contacts-link"
+              >+7 800 555-86-28</a
+            >
+          </p>
+          <a href="#" class="btn btn-red">Напишите нам</a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-social">
-        <ul class="social-list">
-          <li class="social-item"><a href="#" class="social-link">VK</a></li>
-          <li class="social-item"><a href="#" class="social-link">FB</a></li>
-          <li class="social-item">
-            <a href="#" class="social-link">Instagram</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-promo">
-        <p class="promo-slogan">Давайте дружить, это выгодно!</p>
-        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" class="social-link">VK</a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">FB</a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-promo">
+            <p class="promo-slogan">Давайте дружить, это выгодно!</p>
+            <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
