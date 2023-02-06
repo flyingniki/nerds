@@ -60,10 +60,6 @@ body {
   margin: 0 auto;
 }
 
-.hidden {
-  display: none;
-}
-
 .navigation-link,
 .header-cart {
   line-height: 30px;
@@ -246,4 +242,8 @@ body {
 
 .pagination-link {
   background-color: var(--basic-gray);
+}
+
+.hidden {
+  display: none;
 }
