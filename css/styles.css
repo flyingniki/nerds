@@ -90,7 +90,7 @@ body {
 
 .header-navigation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 160px 1fr auto;
   gap: 30px;
 }
 
@@ -103,7 +103,7 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 100px;
 }
 
 .services-info {
@@ -208,7 +208,7 @@ body {
 
 .header,
 .slider,
-.catalog-section,
+.content-section,
 .price-slider-input,
 .price-input {
   background-color: var(--basic-gray);
@@ -234,6 +234,27 @@ body {
 .grid-input,
 .features-input {
   background-color: var(--basic-graphite);
+}
+
+.content-header {
+  text-align: center;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.sort-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .product-panel {
