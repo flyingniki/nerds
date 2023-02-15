@@ -141,6 +141,10 @@ body {
   padding: 15px 60px;
 }
 
+.directions {
+  margin-bottom: 121px;
+}
+
 .directions-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -150,23 +154,32 @@ body {
   padding: 0;
 }
 
-.directions-item-header {
-  line-height: 30px;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .directions-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.directions-item-header {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.directions-item-img {
+  margin-bottom: 25px;
+}
+
+.directions-item-text {
+  margin: 0 0 32px;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 50px;
 }
 
 .services-info {
@@ -177,17 +190,38 @@ body {
   line-height: 45px;
   font-size: 45px;
   font-weight: 500;
+  margin: 0 0 32px;
+}
+
+.services-text {
+  margin: 0 0 40px;
 }
 
 .services-text-upper {
   line-height: 24px;
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 23px;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0;
+}
+
+.services-item {
+  margin: 0 0 23px;
+}
+
+.services-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .statistics-header {
   line-height: 24px;
   font-weight: 700;
 }
+
 .statistics-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
