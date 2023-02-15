@@ -55,6 +55,10 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  padding-top: 50px;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -68,37 +72,9 @@ body {
 .header-cart {
   text-decoration: none;
   color: var(--basic-black);
-}
-
-.navigation-link,
-.header-cart {
   line-height: 30px;
   font-weight: 500;
-}
-
-.slider-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.slider-item-header,
-.catalog-header {
-  line-height: 55px;
-  font-size: 55px;
-  font-weight: 500;
-}
-
-.btn {
-  line-height: 18px;
-  text-decoration: none;
-  color: var(--basic-white);
-  padding: 15px 60px;
-}
-
-.directions-item-header {
-  line-height: 30px;
-  font-size: 24px;
-  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header-navigation {
@@ -127,11 +103,64 @@ body {
   content: url(../img/cart-icon.svg);
   margin-right: 25px;
 }
+.slider {
+  margin-bottom: 80px;
+}
+
+.slider-grid {
+  display: grid;
+  grid-template-areas: "slider-item slider-image";
+  grid-template-columns: 1fr 2fr;
+}
+
+.slider-image {
+  grid-area: slider-image;
+  background-image: url(../img/slides/phones.png);
+  height: 431px;
+}
+
+.slider-item-header,
+.catalog-header {
+  line-height: 55px;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.slider-item-header {
+  margin-bottom: 25px;
+}
+
+.slider-item-text {
+  margin-bottom: 38px;
+}
+
+.btn {
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-white);
+  padding: 15px 60px;
+}
 
 .directions-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 1100px;
   gap: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+.directions-item-header {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.directions-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .services-grid {
