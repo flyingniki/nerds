@@ -274,6 +274,7 @@ body {
   font-weight: 700;
   margin: 0 0 31px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .statistics-list {
@@ -308,11 +309,23 @@ body {
 
 /* partners */
 
+.partners {
+  padding: 46px 0;
+  border-top: 2px solid var(--basic-gray);
+  border-bottom: 2px solid var(--basic-gray);
+}
+
 .partners-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  margin: 0 32px;
+}
+
+.partners-img {
+  opacity: 0.2;
 }
 
 /* contacts */
