@@ -176,6 +176,10 @@ body {
   margin: 0 0 32px;
 }
 
+.services {
+  margin-bottom: 73px;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -217,30 +221,39 @@ body {
   margin-bottom: 0;
 }
 
+.statistics-img {
+  margin: 0 0 37px;
+}
+
 .statistics-header {
   line-height: 24px;
   font-weight: 700;
+  margin: 0 0 31px;
+  text-align: center;
 }
 
 .statistics-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin: 0;
 }
 
 .statistics-desc {
   grid-row: 1/2;
+  line-height: 45px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.statistics-desc,
+.statistics-term {
+  margin: 0;
 }
 
 .statistics-term,
 .product-description {
   line-height: 18px;
-}
-
-.statistics-desc {
-  line-height: 45px;
-  font-size: 45px;
-  font-weight: 700;
 }
 
 .statistics-percent {
