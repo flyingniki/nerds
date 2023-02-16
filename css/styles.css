@@ -55,13 +55,55 @@ body {
   min-height: 100vh;
 }
 
-.header {
-  padding-top: 50px;
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
+}
+
+/* background-colors */
+
+.header,
+.slider,
+.content-section,
+.price-slider-input,
+.price-input {
+  background-color: var(--basic-gray);
+}
+
+.btn-red {
+  background-color: var(--basic-red);
+}
+
+.btn-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.btn-green {
+  background-color: var(--basic-green);
+}
+
+.btn-gray,
+.product-info {
+  background-color: var(--basic-gray);
+}
+
+.grids-input,
+.features-input {
+  background-color: var(--basic-graphite);
+}
+
+.product-panel {
+  background-color: var(--basic-graphite);
+}
+
+.pagination-link {
+  background-color: var(--basic-gray);
+}
+
+/* header */
+
+.header {
+  padding-top: 50px;
 }
 
 .navigation-menu {
@@ -103,6 +145,9 @@ body {
   content: url(../img/cart-icon.svg);
   margin-right: 25px;
 }
+
+/* slider */
+
 .slider {
   margin-bottom: 80px;
 }
@@ -134,12 +179,7 @@ body {
   margin-bottom: 38px;
 }
 
-.btn {
-  line-height: 18px;
-  text-decoration: none;
-  color: var(--basic-white);
-  padding: 15px 60px;
-}
+/* directions */
 
 .directions {
   margin-bottom: 121px;
@@ -175,6 +215,8 @@ body {
 .directions-item-text {
   margin: 0 0 32px;
 }
+
+/* services */
 
 .services {
   margin-bottom: 73px;
@@ -221,6 +263,8 @@ body {
   margin-bottom: 0;
 }
 
+/* services-statistics */
+
 .statistics-img {
   margin: 0 0 37px;
 }
@@ -262,6 +306,8 @@ body {
   font-weight: 700;
 }
 
+/* partners */
+
 .partners-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -269,13 +315,7 @@ body {
   list-style: none;
 }
 
-.social-list {
-  list-style: none;
-}
-
-.social-link {
-  text-decoration: none;
-}
+/* contacts */
 
 .contacts {
   background-image: url(../img/map.png);
@@ -303,6 +343,16 @@ body {
   color: var(--basic-black);
 }
 
+/* footer */
+
+.social-list {
+  list-style: none;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -321,13 +371,17 @@ body {
   line-height: 22px;
 }
 
-.grid-label {
+.grids-label {
   line-height: 20px;
 }
 
-.sort-link {
+/* buttons */
+
+.btn {
   line-height: 18px;
-  font-size: 14px;
+  text-decoration: none;
+  color: var(--basic-white);
+  padding: 15px 60px;
 }
 
 .btn-filter,
@@ -337,35 +391,7 @@ body {
   font-weight: 500;
 }
 
-.header,
-.slider,
-.content-section,
-.price-slider-input,
-.price-input {
-  background-color: var(--basic-gray);
-}
-
-.btn-red {
-  background-color: var(--basic-red);
-}
-
-.btn-yellow {
-  background-color: var(--basic-yellow);
-}
-
-.btn-green {
-  background-color: var(--basic-green);
-}
-
-.btn-gray,
-.product-info {
-  background-color: var(--basic-gray);
-}
-
-.grid-input,
-.features-input {
-  background-color: var(--basic-graphite);
-}
+/* content */
 
 .content-header {
   text-align: center;
@@ -375,6 +401,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
+}
+
+/* products */
+
+.sort-link {
+  line-height: 18px;
+  font-size: 14px;
 }
 
 .sort-grid {
@@ -388,13 +421,7 @@ body {
   gap: 40px;
 }
 
-.product-panel {
-  background-color: var(--basic-graphite);
-}
-
-.pagination-link {
-  background-color: var(--basic-gray);
-}
+/* special */
 
 .hidden {
   display: none;
