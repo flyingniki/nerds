@@ -31,6 +31,7 @@
   --basic-gray: #eeeeee;
   --basic-gray-hover: #dfdfdf;
   --basic-gray-active: #d5d5d5;
+  --basic-lite-gray: #e1e1e1;
   --basic-red: #fb565a;
   --basic-red-hover: #e74246;
   --basic-red-active: #d7373b;
@@ -74,12 +75,36 @@ body {
   background-color: var(--basic-red);
 }
 
+.btn-red:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.btn-red:active {
+  background-color: var(--basic-red-active);
+}
+
 .btn-yellow {
   background-color: var(--basic-yellow);
 }
 
+.btn-yellow:hover {
+  background-color: var(--basic-yellow-hover);
+}
+
+.btn-yellow:active {
+  background-color: var(--basic-yellow-active);
+}
+
 .btn-green {
   background-color: var(--basic-green);
+}
+
+.btn-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.btn-green:active {
+  background-color: var(--basic-green-active);
 }
 
 .btn-gray,
@@ -106,8 +131,12 @@ body {
   padding-top: 50px;
 }
 
-.navigation-menu {
-  list-style: none;
+.header-logo:hover {
+  opacity: 0.7;
+}
+
+.header-logo:active {
+  opacity: 0.3;
 }
 
 .navigation-link,
@@ -128,13 +157,24 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item {
   margin-right: 45px;
+}
+
+.navigation-link:hover,
+.header-cart:hover {
+  color: var(--basic-red);
+}
+
+.navigation-link:active,
+.header-cart:active {
+  background-color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .navigation-list:nth-child(4n) {
@@ -191,6 +231,7 @@ body {
   width: 1100px;
   gap: 100px;
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -253,6 +294,7 @@ body {
 .services-list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .services-item {
@@ -270,6 +312,7 @@ body {
 }
 
 .statistics-header {
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   margin: 0 0 31px;
@@ -281,7 +324,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .statistics-desc {
@@ -310,6 +355,7 @@ body {
 /* partners */
 
 .partners {
+  margin-bottom: 80px;
   padding: 46px 0;
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
@@ -321,11 +367,20 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin: 0 32px;
+  margin: 0;
+  padding: 0 30px;
 }
 
-.partners-img {
+.partners-link {
   opacity: 0.2;
+}
+
+.partners-link:hover {
+  opacity: 1;
+}
+
+.partners-link:active {
+  opacity: 0.1;
 }
 
 /* contacts */
@@ -337,6 +392,18 @@ body {
   height: 416px;
 }
 
+.contacts .container {
+  padding: 54px 0;
+}
+
+.contacts-block {
+  box-sizing: border-box;
+  padding: 50px;
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
+}
+
 .contacts-header,
 .legend-name,
 .sort-text,
@@ -346,9 +413,19 @@ body {
   font-weight: 700;
 }
 
+.contacts-header {
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
 .contacts-address,
 .contacts-tel {
   line-height: 18px;
+}
+
+.contacts-tel {
+  margin-bottom: 38px;
 }
 
 .contacts-link {
@@ -358,8 +435,14 @@ body {
 
 /* footer */
 
+.footer {
+  margin-bottom: 68px;
+}
+
 .social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-link {
@@ -370,12 +453,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 140px;
+  align-items: center;
 }
 
 .promo-slogan {
   line-height: 36px;
   font-size: 36px;
   font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.promo-text {
+  margin: 0;
 }
 
 .promo-text,
@@ -391,10 +480,18 @@ body {
 /* buttons */
 
 .btn {
-  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
+  line-height: 18px;
   color: var(--basic-white);
-  padding: 15px 60px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+}
+
+.btn:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .btn-filter,
@@ -404,7 +501,26 @@ body {
   font-weight: 500;
 }
 
+.btn-slider {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.btn-directions {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn-contacts {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
 /* content */
+
+.content {
+  margin-bottom: 68px;
+}
 
 .content-header {
   text-align: center;
@@ -432,6 +548,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* special */
