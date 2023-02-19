@@ -65,7 +65,7 @@ body {
 
 .header,
 .slider,
-.content-section,
+.catalog-section,
 .price-slider-input,
 .price-input {
   background-color: var(--basic-gray);
@@ -516,23 +516,55 @@ body {
   padding-right: 44px;
 }
 
-/* content */
+.btn-product {
+  padding-left: 72px;
+  padding-right: 72px;
+}
 
-.content {
+/* catalog */
+
+.catalog {
   margin-bottom: 68px;
 }
 
-.content-header {
+.catalog-section {
+  padding-top: 78px;
+  padding-bottom: 108px;
+  margin-bottom: 55px;
+}
+
+.catalog-header {
+  line-height: 55px;
+  font-size: 55px;
+  font-weight: 500;
   text-align: center;
+  margin: 0;
 }
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  grid-template-columns: 260px 1fr;
+  gap: 140px;
+  outline-offset: -2px;
+  outline: 2px solid rgba(0, 255, 0, 0.7);
 }
 
-/* products */
+/* filters */
+
+.form-filter {
+  outline-offset: -2px;
+  outline: 2px solid rgba(12, 35, 211, 0.7);
+}
+
+.price,
+.grids,
+.features {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* sort */
 
 .sort-link {
   line-height: 18px;
@@ -544,13 +576,58 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* products */
+
 .product-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
+  margin-bottom: 55px;
   padding: 0;
+}
+
+.product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  min-height: 578px;
+  margin: 0 40px 30px 0;
+  outline-offset: -2px;
+  outline: 2px solid rgba(241, 62, 7, 0.7);
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
+.product-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.product-info {
+  /* display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%; */
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 44px;
+}
+
+.product-title {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.product-description {
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 /* special */
