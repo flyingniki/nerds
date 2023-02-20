@@ -66,7 +66,7 @@ body {
 .header,
 .slider,
 .catalog-section,
-.price-slider-input,
+.range-input,
 .price-input {
   background-color: var(--basic-gray);
 }
@@ -577,7 +577,35 @@ body {
 }
 
 .features {
+  margin-bottom: 43px;
+}
+
+.legend-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.price .legend-name {
   margin-bottom: 48px;
+}
+
+.price-list,
+.grids-list,
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline-offset: -2px;
+  outline: 2px solid rgba(12, 211, 88, 0.7);
+}
+
+.price-range {
+  width: 260px;
+  height: 80px;
+  background-color: var(--basic-gray);
 }
 
 /* sort */
