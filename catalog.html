@@ -61,112 +61,142 @@
           >
             <fieldset class="price">
               <legend class="legend-name">Стоимость:</legend>
-              <input
-                class="price-slider-input"
-                type="range"
-                id="priceslider"
-                name="priceslider"
-                min="0"
-                max="15000"
-                step="1"
-              />
-              <label class="price-label"
-                >От
-                <input class="price-input" type="text" name="from" value="0"
-              /></label>
-              <label class="price-label"
-                >До
-                <input class="price-input" type="text" name="to" value="15000"
-              /></label>
+              <ul class="price-list">
+                <li class="price-item">
+                  <input
+                    class="price-slider-input"
+                    type="range"
+                    id="priceslider"
+                    name="priceslider"
+                    min="0"
+                    max="15000"
+                    step="1"
+                  />
+                </li>
+                <li class="price-item">
+                  <label class="price-label"
+                    >От
+                    <input
+                      class="price-input"
+                      type="text"
+                      name="from"
+                      value="0"
+                  /></label>
+                </li>
+                <li class="price-item">
+                  <label class="price-label"
+                    >До
+                    <input
+                      class="price-input"
+                      type="text"
+                      name="to"
+                      value="15000"
+                  /></label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="grids">
               <legend class="legend-name">Сетка</legend>
-              <label class="grids-label">
-                <input
-                  class="grids-input"
-                  type="radio"
-                  name="grids"
-                  value="adaptive"
-                  checked
-                />
-                Адаптивная
-              </label>
-
-              <label class="grids-label">
-                <input
-                  class="grids-input"
-                  type="radio"
-                  name="grids"
-                  value="fixed"
-                />
-                Фиксированная
-              </label>
-
-              <label class="grids-label">
-                <input
-                  class="grids-input"
-                  type="radio"
-                  name="grids"
-                  value="rubber"
-                />
-                Резиновая
-              </label>
+              <ul class="grids-list">
+                <li class="grids-item">
+                  <label class="grids-label">
+                    <input
+                      class="grids-input"
+                      type="radio"
+                      name="grids"
+                      value="adaptive"
+                      checked
+                    />
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="grids-item">
+                  <label class="grids-label">
+                    <input
+                      class="grids-input"
+                      type="radio"
+                      name="grids"
+                      value="fixed"
+                    />
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="grids-item">
+                  <label class="grids-label">
+                    <input
+                      class="grids-input"
+                      type="radio"
+                      name="grids"
+                      value="rubber"
+                    />
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="features">
               <legend class="legend-name">Особенности:</legend>
-              <label class="feature-label">
-                <input
-                  class="features-input"
-                  type="checkbox"
-                  name="features"
-                  value="slider"
-                  checked
-                />
-                Слайдер
-              </label>
-
-              <label class="feature-label">
-                <input
-                  class="features-input"
-                  type="checkbox"
-                  name="features"
-                  value="advantages"
-                />
-                Блок преимуществ
-              </label>
-
-              <label class="feature-label">
-                <input
-                  class="features-input"
-                  type="checkbox"
-                  name="features"
-                  value="news"
-                  checked
-                />
-                Новости
-              </label>
-
-              <label class="feature-label">
-                <input
-                  class="features-input"
-                  type="checkbox"
-                  name="features"
-                  value="galery"
-                />
-                Галерея
-              </label>
-
-              <label class="feature-label">
-                <input
-                  class="features-input"
-                  type="checkbox"
-                  name="features"
-                  value="basket"
-                />
-                Корзина
-              </label>
+              <ul class="features-list">
+                <li class="features-item">
+                  <label class="feature-label">
+                    <input
+                      class="features-input"
+                      type="checkbox"
+                      name="features"
+                      value="slider"
+                      checked
+                    />
+                    Слайдер
+                  </label>
+                </li>
+                <li class="features-item">
+                  <label class="feature-label">
+                    <input
+                      class="features-input"
+                      type="checkbox"
+                      name="features"
+                      value="advantages"
+                    />
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="features-item">
+                  <label class="feature-label">
+                    <input
+                      class="features-input"
+                      type="checkbox"
+                      name="features"
+                      value="news"
+                      checked
+                    />
+                    Новости
+                  </label>
+                </li>
+                <li class="features-item">
+                  <label class="feature-label">
+                    <input
+                      class="features-input"
+                      type="checkbox"
+                      name="features"
+                      value="galery"
+                    />
+                    Галерея
+                  </label>
+                </li>
+                <li class="features-item">
+                  <label class="feature-label">
+                    <input
+                      class="features-input"
+                      type="checkbox"
+                      name="features"
+                      value="basket"
+                    />
+                    Корзина
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button class="btn btn-gray btn-filter" type="submit">
               Показать
