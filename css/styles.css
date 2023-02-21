@@ -61,6 +61,12 @@ body {
   margin: 0 auto;
 }
 
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* background-colors */
 
 .header,
@@ -157,9 +163,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-item {
@@ -230,9 +233,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   width: 1100px;
   gap: 100px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .directions-item {
@@ -289,12 +289,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 23px;
-}
-
-.services-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .services-item {
@@ -366,9 +360,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0 30px;
 }
 
 .partners-link {
@@ -439,12 +430,6 @@ body {
   margin-bottom: 68px;
 }
 
-.social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .social-link {
   text-decoration: none;
 }
@@ -504,22 +489,16 @@ body {
 }
 
 .btn-slider {
-  /* padding-left: 54px;
-  padding-right: 54px; */
   width: 240px;
   height: 50px;
 }
 
 .btn-directions {
-  /* padding-left: 40px;
-  padding-right: 40px; */
   width: 160px;
   height: 50px;
 }
 
 .btn-contacts {
-  /* padding-left: 44px;
-  padding-right: 44px; */
   width: 220px;
   height: 50px;
 }
@@ -595,9 +574,6 @@ body {
 .price-list,
 .grids-list,
 .features-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   outline-offset: -2px;
   outline: 2px solid rgba(12, 211, 88, 0.7);
 }
@@ -625,16 +601,10 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
   margin-bottom: 55px;
-  padding: 0;
 }
 
 .product-item {
-  /* position: relative;
-  display: flex;
-  flex-direction: column; */
   width: 358px;
   min-height: 578px;
   margin: 0 40px 30px 0;
@@ -648,11 +618,6 @@ body {
 }
 
 .product-info {
-  /* display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  width: 100%; */
   text-align: center;
   padding-top: 26px;
   padding-bottom: 44px;
