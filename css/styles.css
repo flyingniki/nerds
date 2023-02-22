@@ -726,6 +726,15 @@ body {
   color: var(--basic-black);
 }
 
+.product-link:hover {
+  color: var(--basic-red);
+}
+
+.product-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 .product-description {
   margin: 0;
   margin-bottom: 32px;
