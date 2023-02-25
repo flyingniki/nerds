@@ -129,8 +129,8 @@ body {
   background-color: var(--basic-gray-active);
 }
 
-.grids-input,
-.features-input {
+.radio-input,
+.checkbox-input {
   background-color: var(--basic-graphite);
 }
 
@@ -144,6 +144,10 @@ body {
   padding-top: 50px;
 }
 
+.header-logo {
+  cursor: pointer;
+}
+
 .header-logo:hover {
   opacity: 0.7;
 }
@@ -154,6 +158,7 @@ body {
 
 .navigation-link,
 .header-cart {
+  position: relative;
   text-decoration: none;
   color: var(--basic-black);
   line-height: 30px;
@@ -183,8 +188,19 @@ body {
 
 .navigation-link:active,
 .header-cart:active {
-  background-color: var(--basic-black);
+  color: var(--basic-black);
   opacity: 0.3;
+}
+
+.navigation-link:active::after,
+.header-cart:active::after {
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-red);
 }
 
 .navigation-list:last-child {
@@ -471,7 +487,7 @@ body {
   line-height: 22px;
 }
 
-.grids-label {
+.option-label {
   line-height: 20px;
 }
 
@@ -672,9 +688,56 @@ body {
   color: var(--basic-dark-graphite);
 }
 
-.grids-label,
-.feature-label {
-  margin-left: 11px;
+.radio-input + .option-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 17px;
+  height: 17px;
+  border: 4px solid var(--basic-graphite);
+  border-radius: 50%;
+}
+
+.radio-input:checked + .option-label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -28px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--basic-graphite);
+  border-radius: 50%;
+}
+
+.checkbox-input + .option-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-graphite);
+}
+
+.checkbox-input:checked + .option-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 19px;
+  height: 19px;
+  background-image: url(/img/icons/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.option-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 36px;
   color: var(--basic-dark-graphite);
 }
 
@@ -687,12 +750,9 @@ body {
   text-align: center;
 }
 
-.grids-item {
-  margin-bottom: 15px;
-}
-
+.grids-item,
 .features-item {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 /* sort */
