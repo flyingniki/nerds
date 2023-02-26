@@ -31,7 +31,7 @@
             <a href="blank.html" class="navigation-link">Клиенты</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Магазин</a>
+            <a href="catalog.html" class="navigation-link active-link">Магазин</a>
           </li>
           <li class="navigation-item">
             <a href="blank.html" class="navigation-link">Контакты</a>
@@ -78,16 +78,16 @@
             <legend class="legend-name">Сетка</legend>
             <ul class="grids-list clear-list">
               <li class="grids-item">
-                <input class="radio-input visually-hidden" type="radio" name="grids" value="adaptive" checked /><label
-                  class="option-label">Адаптивная</label>
+                <input class="radio-input visually-hidden" type="radio" name="grids" id="adaptive" value="adaptive"
+                  checked /><label class="option-label" for="adaptive">Адаптивная</label>
               </li>
               <li class="grids-item">
-                <input class="radio-input visually-hidden" type="radio" name="grids" value="fixed" /><label
-                  class="option-label">Фиксированная</label>
+                <input class="radio-input visually-hidden" type="radio" name="grids" id="fixed" value="fixed" /><label
+                  class="option-label" for="fixed">Фиксированная</label>
               </li>
               <li class="grids-item">
-                <input class="radio-input visually-hidden" type="radio" name="grids" value="rubber" /><label
-                  class="option-label">Резиновая</label>
+                <input class="radio-input visually-hidden" type="radio" name="grids" id="rubber" value="rubber" /><label
+                  class="option-label" for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -96,24 +96,24 @@
             <legend class="legend-name">Особенности:</legend>
             <ul class="features-list clear-list">
               <li class="features-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="features" value="slider" checked /><label
-                  class="option-label">Слайдер</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="features" id="slider" value="slider"
+                  checked /><label class="option-label" for="slider">Слайдер</label>
               </li>
               <li class="features-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="features" value="advantages" /><label
-                  class="option-label">Блок преимуществ</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="features" id="advantages"
+                  value="advantages" /><label class="option-label" for="advantages">Блок преимуществ</label>
               </li>
               <li class="features-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="features" value="news" checked /><label
-                  class="option-label">Новости</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="features" id="news" value="news"
+                  checked /><label class="option-label" for="news">Новости</label>
               </li>
               <li class="features-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="features" value="galery" /><label
-                  class="option-label">Галерея</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="features" id="galery"
+                  value="galery" /><label class="option-label" for="galery">Галерея</label>
               </li>
               <li class="features-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="features" value="basket" /><label
-                  class="option-label">Корзина</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="features" id="basket"
+                  value="basket" /><label class="option-label" for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -126,23 +126,28 @@
           <h2 class="visually-hidden">Товары</h2>
           <div class="sort-grid">
             <p class="sort-text">Сортировать:</p>
-            <ul class="sort-list clear-list">
-              <li class="sort-item">
-                <a href="#" class="sort-link">По цене</a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort-link">По типу</a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort-link">По названию</a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort-arrow-up"></a>
-              </li>
-              <li class="sort-item">
-                <a href="#" class="sort-arrow-down"></a>
-              </li>
-            </ul>
+            <div class="sort-block">
+              <ul class="sort-list clear-list">
+                <li class="sort-item">
+                  <a href="#" class="sort-link">По цене</a>
+                </li>
+                <li class="sort-item">
+                  <a href="#" class="sort-link">По типу</a>
+                </li>
+                <li class="sort-item">
+                  <a href="#" class="sort-link">По названию</a>
+                </li>
+              </ul>
+              <ul class="arrow-list clear-list">
+                <li class="arrow-item">
+                  <a href="#" class="arrow"><img class="arrow-img" src="/img/icons/icon-down.svg" alt="icon-down" /></a>
+                </li>
+                <li class="arrow-item">
+                  <a href="#" class="arrow"><img class="arrow-img" src="/img/icons/icon-up.svg" alt="icon-up" /></a>
+                </li>
+              </ul>
+            </div>
+            
           </div>
 
           <ul class="product-list clear-list">
