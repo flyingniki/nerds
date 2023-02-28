@@ -830,17 +830,24 @@ body {
   opacity: 0.4;
 }
 
-.checkbox-input:checked + .option-label::before {
+.checkbox-input:checked + .option-label::after {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -36px;
+  top: -1px;
+  left: -32px;
   width: 19px;
   height: 19px;
   background-image: url(../img/icons/check.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
+}
+
+.radio-input:hover + .option-label::before,
+.radio-input:hover + .option-label::after,
+.checkbox-input:hover + .option-label::before,
+.checkbox-input:hover + .option-label::after {
+  opacity: 1;
 }
 
 .option-label {
@@ -946,7 +953,7 @@ body {
 .product-item {
   position: relative;
   width: 360px;
-  height: 578px;
+  height: 618px;
   margin: 0 40px 30px 0;
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
 }
@@ -955,18 +962,35 @@ body {
   margin-right: 0;
 }
 
-.product-panel {  
-  width: 358px;
+.product-panel {
+  width: 360px;
   height: 40px;
   background-color: var(--basic-graphite);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   opacity: 0.12;
 }
 
+.panel-list.clear-list {
+  display: flex;
+  margin-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.decor-item {
+  width: 14px;
+  height: 14px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  margin-right: 9px;
+}
+
 .product-info {
+  display: none;
   position: absolute;
   bottom: 0;
-  box-sizing: border-box;
-  width: 358px;
+  width: 360px;
   text-align: center;
   padding-top: 26px;
   padding-bottom: 44px;
@@ -975,6 +999,11 @@ body {
 .product-title {
   margin: 0;
   margin-bottom: 12px;
+}
+
+.product-description {
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .product-link {
@@ -992,9 +1021,17 @@ body {
   opacity: 0.3;
 }
 
-.product-description {
-  margin: 0;
-  margin-bottom: 32px;
+.product-img {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.product-item:hover .product-panel {
+  opacity: 1;
+}
+
+.product-item:hover .product-info {
+  display: block;
 }
 
 /* pagination */
