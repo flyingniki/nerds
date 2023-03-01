@@ -227,9 +227,21 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.slider-image {
+.slider-grid:nth-child(1) .slider-image {
   grid-area: slider-image;
   background-image: url(../img/slides/phones.png);
+  height: 431px;
+}
+
+.slider-grid:nth-child(2) .slider-image {
+  grid-area: slider-image;
+  background-image: url(../img/slides/pads.png);
+  height: 431px;
+}
+
+.slider-grid:nth-child(3) .slider-image {
+  grid-area: slider-image;
+  background-image: url(../img/slides/gadgets.png);
   height: 431px;
 }
 
@@ -260,11 +272,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   width: 18px;
   height: 18px;
   margin-right: 17px;
   background-color: var(--basic-white);
+  border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .control-button.current-slide::after {
