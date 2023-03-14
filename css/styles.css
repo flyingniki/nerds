@@ -483,6 +483,7 @@ body {
 }
 
 .contacts .container {
+  position: relative;
   padding: 54px 0;
 }
 
@@ -521,6 +522,12 @@ body {
 .contacts-link {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.map-marker {
+  position: absolute;
+  top: 70px;
+  left: 707px;
 }
 
 /* footer */
