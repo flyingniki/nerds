@@ -696,7 +696,7 @@ body {
 }
 
 .catalog .container {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .catalog-section {
@@ -1071,6 +1071,7 @@ body {
 
 .pagination-item {
   margin-right: 11px;
+  margin-bottom: 10px;
 }
 
 /* special */
