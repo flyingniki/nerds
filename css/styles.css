@@ -46,6 +46,7 @@
   --basic-graphite: #4d4d4d;
   --basic-lite-graphite: #dbdbdb;
   --basic-blue-graphite: #283136;
+  --modal-border: #d7dcde;
 }
 
 body {
@@ -647,7 +648,8 @@ body {
 .btn-filter,
 .btn-product,
 .btn-link,
-.btn-contacts {
+.btn-contacts,
+.btn-send {
   font-weight: 500;
 }
 
@@ -683,6 +685,13 @@ body {
   width: 50px;
   height: 50px;
   color: var(--basic-black);
+}
+
+.btn-send {
+  width: 260px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
 }
 
 .pagination-item:last-of-type .btn-link {
@@ -1096,4 +1105,91 @@ body {
 .btn-active {
   background-color: var(--basic-white);
   border: 3px solid var(--basic-lite-graphite);
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+  margin: auto;
+  padding: 63px 100px 84px 100px;
+  width: 960px;
+  box-sizing: border-box;
+  background-color: var(--basic-white);
+  box-shadow: 0 20px 40px -10px var(--basic-black);
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  opacity: 0.3;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-header {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0 0 37px;
+}
+
+.modal-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.modal-item:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.modal-label {
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.modal-input {
+  display: block;
+  box-sizing: border-box;
+  width: 360px;
+  min-height: 50px;
+  padding: 16px;
+  border: 2px solid var(--modal-border);
+  border-radius: 3px;
+}
+
+.modal-text {
+  box-sizing: border-box;
+  width: 760px;
+  padding: 16px;
+  border: 2px solid var(--modal-border);
+  border-radius: 3px;
 }
