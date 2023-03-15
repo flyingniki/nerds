@@ -46,7 +46,10 @@
   --basic-graphite: #4d4d4d;
   --basic-lite-graphite: #dbdbdb;
   --basic-blue-graphite: #283136;
-  --modal-border: #d7dcde;
+  --modal-input: #d7dcde;
+  --modal-input-hover: #b4b9bb;
+  --modal-input-focus: #000000;
+  --modal-text-focus: #444444;
 }
 
 body {
@@ -1134,6 +1137,14 @@ body {
   cursor: pointer;
 }
 
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 .modal-close::before,
 .modal-close::after {
   content: "";
@@ -1182,14 +1193,38 @@ body {
   width: 360px;
   min-height: 50px;
   padding: 16px;
-  border: 2px solid var(--modal-border);
+  border: 2px solid var(--modal-input);
   border-radius: 3px;
+}
+
+.modal-input:hover {
+  border-color: (--modal-input-hover);
+}
+
+.modal-input:focus {
+  border-color: var(--modal-input-focus);
+}
+
+.modal-input:focus::placeholder {
+  color: var(--modal-text-focus);
 }
 
 .modal-text {
   box-sizing: border-box;
   width: 760px;
   padding: 16px;
-  border: 2px solid var(--modal-border);
+  border: 2px solid var(--modal-input);
   border-radius: 3px;
+}
+
+.modal-text:hover {
+  border-color: (--modal-input-hover);
+}
+
+.modal-text:focus {
+  border-color: var(--modal-input-focus);
+}
+
+.modal-text:focus::placeholder {
+  color: var(--modal-text-focus);
 }
