@@ -541,9 +541,9 @@ body {
 }
 
 .social-link {
-  display: block;
-  position: relative;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 81px;
   height: 81px;
   background-color: var(--basic-gray);
@@ -563,7 +563,7 @@ body {
   margin-right: 0;
 }
 
-.social-item:nth-child(1) .social-link::after {
+/* .social-item:nth-child(1) .social-link::after {
   position: absolute;
   content: "";
   top: 33px;
@@ -594,7 +594,7 @@ body {
   height: 21px;
   background-image: url(../img/social/insta-icon.svg);
   background-repeat: no-repeat;
-}
+} */
 
 .footer-grid {
   display: grid;
@@ -884,7 +884,11 @@ body {
 .radio-input:hover + .option-label::before,
 .radio-input:hover + .option-label::after,
 .checkbox-input:hover + .option-label::before,
-.checkbox-input:hover + .option-label::after {
+.checkbox-input:hover + .option-label::after,
+.radio-input:focus + .option-label::before,
+.radio-input:focus + .option-label::after,
+.checkbox-input:focus + .option-label::before,
+.checkbox-input:focus + .option-label::after {
   opacity: 1;
 }
 
