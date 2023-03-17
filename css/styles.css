@@ -862,20 +862,22 @@ body {
   position: absolute;
   top: -2px;
   left: -36px;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--basic-graphite);
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.4;
 }
 
-.checkbox-input:checked + .option-label::after {
+.checkbox-input:checked + .option-label::before {
   content: "";
   position: absolute;
   top: -1px;
-  left: -32px;
-  width: 19px;
-  height: 19px;
-  background-image: url(../img/icons/check.svg);
+  left: -36px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
@@ -884,11 +886,9 @@ body {
 .radio-input:hover + .option-label::before,
 .radio-input:hover + .option-label::after,
 .checkbox-input:hover + .option-label::before,
-.checkbox-input:hover + .option-label::after,
 .radio-input:focus + .option-label::before,
 .radio-input:focus + .option-label::after,
-.checkbox-input:focus + .option-label::before,
-.checkbox-input:focus + .option-label::after {
+.checkbox-input:focus + .option-label::before {
   opacity: 1;
 }
 
