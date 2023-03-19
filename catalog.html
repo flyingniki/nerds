@@ -140,10 +140,10 @@
               </ul>
               <ul class="arrow-list clear-list">
                 <li class="arrow-item">
-                  <a href="#" class="arrow"><img class="arrow-img" src="/img/icons/icon-down.svg" alt="icon-down" /></a>
+                  <a href="#" class="arrow" aria-label="По убыванию"><img class="arrow-img" src="/img/icons/icon-down.svg" alt="icon-down" /></a>
                 </li>
                 <li class="arrow-item">
-                  <a href="#" class="arrow"><img class="arrow-img" src="/img/icons/icon-up.svg" alt="icon-up" /></a>
+                  <a href="#" class="arrow" aria-label="По возрастанию"><img class="arrow-img" src="/img/icons/icon-up.svg" alt="icon-up" /></a>
                 </li>
               </ul>
             </div>
@@ -352,6 +352,31 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <h2 class="modal-header">Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <ul class="modal-list clear-list">
+        <li class="modal-item">
+          <label class="modal-label" for="your-name">Ваше имя:</label>
+          <input class="modal-input" type="text" name="your-name" id="your-name" placeholder="Имя Фамилия" />
+        </li>
+        <li class="modal-item">
+          <label class="modal-label" for="your-email">Ваше email:</label>
+          <input class="modal-input" type="email" name="your-email" id="your-email" placeholder="email@example.com" />
+        </li>
+        <li class="modal-item">
+          <label class="modal-label" for="your-text">Текст письма:</label>
+          <textarea class="modal-text" name="your-text" id="your-text" cols="15" rows="5"
+            placeholder="В свободной форме"></textarea>
+        </li>
+      </ul>
+      <button class="btn btn-red btn-send" type="submit">
+        Отправить
+      </button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

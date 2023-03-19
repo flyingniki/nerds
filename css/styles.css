@@ -1118,6 +1118,7 @@ body {
 
 .modal {
   position: fixed;
+  display: none;
   right: 0;
   bottom: 180px;
   left: 0;
@@ -1127,6 +1128,10 @@ body {
   box-sizing: border-box;
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px -10px var(--basic-black);
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-close {
