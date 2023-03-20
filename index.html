@@ -210,19 +210,24 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
+      <iframe class="contacts-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <div class="container">
-        <div class="contacts-block">
-          <p class="contacts-header">nёrd's design studio</p>
-          <p class="contacts-address">
-            наб. Реки Карповки,<br />5 лит П, Санкт-Петербург
-          </p>
-          <p class="contacts-tel">
-            <a href="tel:+78005558628" class="contacts-link">+7 800 555-86-28</a>
-          </p>
-          <a href="#" class="btn btn-red btn-contacts">Напишите&nbsp;нам</a>
-        </div>
-        <div class="map-marker">
-          <img src="img/map-marker.png" class="marker" width="231" height="190" alt="Маркер">
+        <div class="contacts-info">
+          <div class="contacts-block">
+            <p class="contacts-header">nёrd's design studio</p>
+            <p class="contacts-address">
+              наб. Реки Карповки,<br />5 лит П, Санкт-Петербург
+            </p>
+            <p class="contacts-tel">
+              <a href="tel:+78005558628" class="contacts-link">+7 800 555-86-28</a>
+            </p>
+            <a href="#" class="btn btn-red btn-contacts">Напишите&nbsp;нам</a>
+          </div>
+          <div class="map-marker">
+            <img src="img/map-marker.png" class="marker" width="231" height="190" alt="Маркер">
+          </div>
         </div>
       </div>
     </section>
@@ -280,7 +285,8 @@
         </li>
         <li class="modal-item">
           <label class="modal-label" for="your-email">Ваше email:</label>
-          <input class="modal-input modal-email" type="email" name="your-email" id="your-email" placeholder="email@example.com" />
+          <input class="modal-input modal-email" type="email" name="your-email" id="your-email"
+            placeholder="email@example.com" />
         </li>
         <li class="modal-item">
           <label class="modal-label" for="your-text">Текст письма:</label>

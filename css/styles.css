@@ -480,13 +480,24 @@ body {
 /* contacts */
 
 .contacts {
-  background-image: url(../img/map.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  position: relative;
+}
+
+.contacts-frame {
+  width: 100%;
   height: 416px;
+  border: none;
 }
 
 .contacts .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contacts-info {
   position: relative;
   padding: 54px 0;
 }
