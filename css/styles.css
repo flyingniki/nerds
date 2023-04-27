@@ -452,19 +452,6 @@ body {
   align-items: center;
 }
 
-/* .partners-item {
-  position: relative;
-}
-
-.partners-item::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  width: 2px;
-  height: 52px;
-  background-color: var(--basic-gray);
-} */
-
 .partners-link {
   opacity: 0.2;
 }
@@ -574,39 +561,6 @@ body {
   margin-right: 0;
 }
 
-/* .social-item:nth-child(1) .social-link::after {
-  position: absolute;
-  content: "";
-  top: 33px;
-  left: 27px;
-  width: 26px;
-  height: 15px;
-  background-image: url(../img/social/vk-icon.svg);
-  background-repeat: no-repeat;
-}
-
-.social-item:nth-child(2) .social-link::after {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 34px;
-  width: 34px;
-  height: 22px;
-  background-image: url(../img/social/fb-icon.svg);
-  background-repeat: no-repeat;
-}
-
-.social-item:nth-child(3) .social-link::after {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 30px;
-  width: 21px;
-  height: 21px;
-  background-image: url(../img/social/insta-icon.svg);
-  background-repeat: no-repeat;
-} */
-
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -633,10 +587,6 @@ body {
 .price-label,
 .price-input {
   line-height: 22px;
-}
-
-.option-label {
-  line-height: 20px;
 }
 
 /* buttons */
@@ -906,6 +856,7 @@ body {
 .option-label {
   position: relative;
   display: block;
+  line-height: 20px;
   cursor: pointer;
   user-select: none;
   margin-left: 36px;
